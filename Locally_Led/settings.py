@@ -148,8 +148,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'locallyled_db',
         'USER': "postgres",
-        'PASSWORD': 'locallyled12345',
-        'HOST': 'db-locallyled-instance.cnshbfqy5bxm.us-east-1.rds.amazonaws.com',
+        'PASSWORD': config('PASSWORD'),
+        'HOST': config('HOST'),
         'PORT': '5432'
     }
 }
